@@ -8,4 +8,3 @@ Ejercicios:
 
 https://www.tutorialesprogramacionya.com/javascriptya/
 
-https://tutobasico.com/basicos-javascript/
