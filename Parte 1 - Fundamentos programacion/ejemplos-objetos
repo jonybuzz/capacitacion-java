@@ -1,0 +1,35 @@
+// CREDITOS
+
+var creditoEfectivo = {
+	cantidadCuotas: 12,
+	cuotasPagas: 0,
+	financiador: "SA",
+	importeTotal: 15000.20,
+	obtenerImporteDeCuota: function(){
+		return this.importeTotal / this.cantidadCuotas;
+    },
+	pagarCuotas: function (cantidad){
+    	this.cuotasPagas = this.cuotasPagas + cantidad;
+	}
+}
+
+var cliente = {
+  nombre: "Jona"
+	creditos: [creditoEfectivo] 
+	cancelarDeuda: function(){
+		var primerCredito = this.creditos[0];
+		var cuotasPendientes = (primerCredito.cantidadCuotas) - (primerCredito.cuotasPagas);
+		primerCredito.pagarCuotas(cuotasPendientes);
+	}
+}
+
+creditoEfectivo.cuotasPagas;
+
+cliente.cancelarDeuda();
+
+creditoEfectivo.cuotasPagas;
+
+// FECHAS
+
+var unaFecha = new Date();
+unaFecha.getFullYear();
