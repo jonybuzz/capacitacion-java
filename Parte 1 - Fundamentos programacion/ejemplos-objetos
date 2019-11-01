@@ -7,9 +7,9 @@ var creditoEfectivo = {
 	importeTotal: 15000.20,
 	obtenerImporteDeCuota: function(){
 		return this.importeTotal / this.cantidadCuotas;
-    },
+	},
 	pagarCuotas: function (cantidad){
-    	this.cuotasPagas = this.cuotasPagas + cantidad;
+		this.cuotasPagas = this.cuotasPagas + cantidad;
 	}
 }
 
