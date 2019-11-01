@@ -14,8 +14,8 @@ var creditoEfectivo = {
 }
 
 var cliente = {
-  nombre: "Jona"
-	creditos: [creditoEfectivo] 
+	nombre: "Jona",
+	creditos: [creditoEfectivo],
 	cancelarDeuda: function(){
 		var primerCredito = this.creditos[0];
 		var cuotasPendientes = (primerCredito.cantidadCuotas) - (primerCredito.cuotasPagas);
